@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#686868">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/back">
+                    
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/logo_window"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Computerly"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:layout_marginTop="10sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="215dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                      <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:layout_marginRight="5dp"
+                          android:layout_gravity="center"
+                          android:orientation="vertical">
+
+                          <RelativeLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent">
+                              
+                              <ImageView
+                                  android:layout_width="50dp"
+                                  android:layout_height="50dp"
+                                  android:src="@drawable/ram"
+                                  android:layout_centerInParent="true"
+                                  android:id="@+id/image1"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Hardware Info"
+                                  android:textSize="16sp"
+                                  android:textAlignment="center"
+                                  android:textColor="#000"
+                                  android:textStyle="bold"
+                                  android:layout_below="@id/image1"
+                                  android:layout_centerHorizontal="true"
+                                  android:layout_marginTop="10dp"
+                                  android:layout_marginBottom="10dp"/>
+                              <Button
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:id="@+id/ram_btn"
+                                  android:background="@android:color/transparent"/>
+                              
+                          </RelativeLayout>
+
+                      </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/software_icon"
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/image2"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Basic Softwares"
+                                    android:textSize="16sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:layout_below="@id/image2"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/software_btn"
+                                    android:background="@android:color/transparent"/>
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/short_key"
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/image3"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Shortcut Keys"
+                                    android:textSize="16sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:layout_below="@id/image3"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/shortcut_btn"
+                                    android:background="@android:color/transparent"/>
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/learn"
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/image4"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Basic Learning"
+                                    android:textSize="16sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:layout_below="@id/image4"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/learn_btn"
+                                    android:background="@android:color/transparent"/>
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/logo_window"
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/image5"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Window installation"
+                                    android:textSize="16sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:layout_below="@id/image5"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/installation_btn"
+                                    android:background="@android:color/transparent"/>
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/error_icon"
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/image6"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Errors Understanding"
+                                    android:textSize="16sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:layout_below="@id/image6"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/error_btn"
+                                    android:background="@android:color/transparent"/>
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/speed_icon"
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/image7"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="System Speedup"
+                                    android:textSize="16sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:layout_below="@id/image7"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/speedup_btn"
+                                    android:background="@android:color/transparent"/>
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/input_output_icon"
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/image8"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Input/Output Devices"
+                                    android:textSize="16sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:layout_below="@id/image8"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/input_output_btn"
+                                    android:background="@android:color/transparent"/>
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/advice_icon"
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/image9"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Developer Advice"
+                                    android:textSize="16sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:layout_below="@id/image9"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/advice_btn"
+                                    android:background="@android:color/transparent"/>
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+           </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
