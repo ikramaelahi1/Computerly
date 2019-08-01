@@ -267,7 +267,7 @@
                                 <Button
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/installation_btn"
+                                    android:id="@+id/window_btn"
                                     android:background="@android:color/transparent"/>
 
                             </RelativeLayout>
