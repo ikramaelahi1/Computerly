@@ -20,19 +20,8 @@ public class data {
         return itemDescription;
     }
 
-    public void setItemTitle(String itemTitle) {
-        this.itemTitle = itemTitle;
-    }
-
-    public void setItemDescription(String itemDescription) {
-        this.itemDescription = itemDescription;
-    }
-
     public int getItemImage() {
         return itemImage;
     }
 
-    public void setItemImage(int itemImage) {
-        this.itemImage = itemImage;
-    }
 }

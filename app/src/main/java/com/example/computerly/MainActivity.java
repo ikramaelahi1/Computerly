@@ -33,6 +33,13 @@ private Button ram,soft,shortcut,learn,window,error,speedup,io,advice;
                 startActivity(intent);
             }
         });
+        soft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,software_info.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
