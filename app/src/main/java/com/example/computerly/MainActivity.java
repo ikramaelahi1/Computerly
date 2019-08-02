@@ -40,6 +40,55 @@ private Button ram,soft,shortcut,learn,window,error,speedup,io,advice;
                 startActivity(intent);
             }
         });
+        shortcut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,shortcut_keys.class);
+                startActivity(intent);
+            }
+        });
+        learn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,basic_learning.class);
+                startActivity(intent);
+            }
+        });
+        window.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,window_installation.class);
+                startActivity(intent);
+            }
+        });
+        error.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,error_understanding.class);
+                startActivity(intent);
+            }
+        });
+        speedup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,speedup_system.class);
+                startActivity(intent);
+            }
+        });
+        io.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,io_devices.class);
+                startActivity(intent);
+            }
+        });
+        advice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,advice.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

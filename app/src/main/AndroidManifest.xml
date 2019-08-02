@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".software_info"></activity>
+        <activity android:name=".advice"></activity>
+        <activity android:name=".io_devices" />
+        <activity android:name=".speedup_system" />
+        <activity android:name=".error_understanding" />
+        <activity android:name=".window_installation" />
+        <activity android:name=".basic_learning" />
+        <activity android:name=".shortcut_keys" />
+        <activity android:name=".software_info" />
         <activity android:name=".detailActivity" />
         <activity android:name=".hardware" />
         <activity android:name=".MainActivity" />
